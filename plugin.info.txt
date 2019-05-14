@@ -1,0 +1,7 @@
+base   dlcounter
+author Phil Ide
+email  phil@pbih.eu
+date   2019-05-14
+name   dlcounter plugin
+desc   Counts zip-file downloads
+url    http://philip-p-ide.uk/doku.php/blog:aardvaark:downloads
