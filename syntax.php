@@ -118,13 +118,18 @@ class syntax_plugin_dlcounter extends DokuWiki_Syntax_Plugin {
             $sort = $data['sort'] == '' ? 'sort' : $data['sort'];
 
             if( $command == 'name' ){
+                $json = $this->dlcounter_switchKeys($json, true);
+
                 if( $sort == 'sort' ) ksort($json);
                 else if( $sort == 'rsort' ) krsort($json);
+                
+                $json = $this->dlcounter_switchKeys($json, false);
             }
             else if( $command == 'count' ){
                 if( $sort == 'sort' ) asort( $json );
                 else if( $sort == 'rsort' ) arsort( $json );
             }
+
             $table = "<table>";
             if( $data['header'] ){
                 $table .= "<tr><th colspan=2 style='text-align:".$data['halign'].";'>".$data['htext']."</th></tr>";
@@ -143,4 +148,31 @@ class syntax_plugin_dlcounter extends DokuWiki_Syntax_Plugin {
         }
         return true;
     }
+
+    
+    function dlcounter_switchKeys( $arr, $back2Front ){
+        $keys = array_keys( $arr );
+        for( $i = 0; $i < count($keys); $i++ ){
+            if( $back2Front ) $keys[$i] = $this->switchKeyHelperA( $keys[$i] );
+            else $keys[$i] = $this->switchKeyHelperB( $keys[$i] );
+        }
+        return array_combine( $keys, $arr );
+    }
+    
+    // move the fileame to the front of the path
+    function switchKeyHelperA( $v ){
+        $a = explode(':', $v);
+        $f = array_pop($a);
+        array_unshift( $a, $f );
+        return implode(':', $a );
+    }
+    
+    // move the filename from the front of the path to the end
+    function switchKeyHelperB( $v ){
+        $a = explode(':', $v);
+        $f = array_shift($a);
+        array_push( $a, $f );
+        return implode(':', $a );
+    }
+
 }
