@@ -7,6 +7,8 @@ Configuring through the admin interface allows you to specify which file extensi
 
 A rich syntax allows you to specify the order of data, whether path information is displayed, left/right justified, whether there is a header and if so, what the header text is. Useful defaults are provided for all options.
 
+A description of the datastore is also provided with some example code on how to access it and retrieve the data, so you can perform any other operations on the data or inject the data into your own (more complex) tables.
+
 #### Syntax
 To fetch a counter (just the number) for a specific file:  
 ```wiki
