@@ -16,9 +16,7 @@ To fetch a counter (just the number) for a specific file:
 To generate a table:  
 ```wiki
     {{dlcounter>name}}  
-```
     or  
-```wiki
     {{dlcounter>count}}  
 ````
 
