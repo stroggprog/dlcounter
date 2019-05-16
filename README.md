@@ -22,7 +22,7 @@ To generate a table:
     {{dlcounter>count}}  
 ````
 
-The command (name or count) identifies the column you wish to sort on. Since the default sort order is natural, you'll probably want to add a sort option:  
+The command (*name* or *count*) identifies the column you wish to sort on. Since the default sort order is natural, you'll probably want to add a sort option:  
 ```wiki
     {{dlcounter>count?sort}}  
     or  
@@ -54,6 +54,6 @@ A complete list of optional parameters:
   noheader => do not display a header  
   htext    => set alternate text for header  
 ```
-Tables display the full path of the files as they appear in the media library (e.g. path:to:snow.zip). Sorting on filenames is sorted on the filename with the path as a subsort.
+Tables display the full path of the files as they appear in the media library (e.g. path:to:snow.zip) unless the *strip* option is used. Sorting on filenames is sorted on the filename with the path as a subsort.
 
 The full documentation can be seen [here](http://philip-p-ide.uk/doku.php/blog:articles:software:doku_dlcounter)
