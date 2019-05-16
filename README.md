@@ -24,4 +24,30 @@ The command (name or count) identifies the column you wish to sort on. Since the
 or  
 `    {{dlcounter>count?rsort}}`
 
-There are many other options available. The full documentation can be seen [here](http://philip-p-ide.uk/doku.php/blog:articles:software:doku_dlcounter)
+A complete list of syntax options:
+`
+SORTING
+sort  => orders the data in ascending order
+rsort => orders the data in descending order
+
+FILENAME DISPLAY
+left   => left-align the filenames
+center => center the names
+right  => right-align the filenames
+
+strip => strip the path information to leave just the filename
+nobold => do not highlight the filename
+
+COUNTER DISPLAY
+minwidth => minimum width of the column
+cpad     => left-pad the column with spaces
+
+HEADER DISPLAY
+hleft   => left-align the header
+hcenter => center the header
+hright  => right-align the header
+
+noheader => do not display a header
+htext    => set alternate text for header
+`
+The full documentation can be seen [here](http://philip-p-ide.uk/doku.php/blog:articles:software:doku_dlcounter)
