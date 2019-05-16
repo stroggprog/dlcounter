@@ -23,7 +23,7 @@ To generate a table:
 The command (name or count) identifies the column you wish to sort on. Since the default sort order is natural, you'll probably want to add a sort option:  
 ```wiki
     {{dlcounter>count?sort}}  
- or  
+    or  
     {{dlcounter>count?rsort}}  
 ```
 A complete list of optional parameters:
