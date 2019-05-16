@@ -9,47 +9,51 @@ A rich syntax allows you to specify the order of data, whether path information 
 
 #### Syntax
 To fetch a counter (just the number) for a specific file:  
->
->    {{dlcounter>file?yourFileName.zip}}  
->
+```wiki
+    {{dlcounter>file?yourFileName.zip}}  
+```
 
 To generate a table:  
->    {{dlcounter>name}}  
-> or  
->    {{dlcounter>count}}
-
+```wiki
+    {{dlcounter>name}}  
+```
+    or  
+```wiki
+    {{dlcounter>count}}  
+````
 
 The command (name or count) identifies the column you wish to sort on. Since the default sort order is natural, you'll probably want to add a sort option:  
->   {{dlcounter>count?sort}}  
-> or  
->    {{dlcounter>count?rsort}}  
-
+```wiki
+    {{dlcounter>count?sort}}  
+ or  
+    {{dlcounter>count?rsort}}  
+```
 A complete list of optional parameters:
-
-> SORTING  
-> sort  => orders the data in ascending order  
-> rsort => orders the data in descending order  
->  
-> FILENAME DISPLAY  
-> left   => left-align the filenames  
-> center => center the names  
-> right  => right-align the filenames  
->   
-> strip => strip the path information to leave just the filename  
-> nobold => do not highlight the filename  
->   
-> COUNTER DISPLAY  
-> minwidth => minimum width of the column  
-> cpad     => left-pad the column with spaces  
->   
-> HEADER DISPLAY  
-> hleft   => left-align the header  
-> hcenter => center the header  
-> hright  => right-align the header  
->   
-> noheader => do not display a header  
-> htext    => set alternate text for header  
-
+```wiki
+  SORTING  
+  sort  => orders the data in ascending order  
+  rsort => orders the data in descending order  
+   
+  FILENAME DISPLAY  
+  left   => left-align the filenames  
+  center => center the names  
+  right  => right-align the filenames  
+   
+  strip => strip the path information to leave just the filename  
+  nobold => do not highlight the filename  
+   
+  COUNTER DISPLAY  
+  minwidth => minimum width of the column  
+  cpad     => left-pad the column with spaces  
+    
+  HEADER DISPLAY  
+  hleft   => left-align the header  
+  hcenter => center the header  
+  hright  => right-align the header  
+    
+  noheader => do not display a header  
+  htext    => set alternate text for header  
+```
 Tables display the full path of the files as they appear in the media library (e.g. path:to:snow.zip). Sorting on filenames is sorted on the filename with the path as a subsort.
 
 The full documentation can be seen [here](http://philip-p-ide.uk/doku.php/blog:articles:software:doku_dlcounter)
