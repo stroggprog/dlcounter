@@ -1,7 +1,7 @@
 # dlcounter
 Download counter for DokuWiki
 
-**NOTE:** I wrote dlcounter but lost control of the phil-ide account where the original repository was stored, so I've cloned it here. This is now the official repo for _dlcounter_ and all future updates (if any) will be found here.
+**NOTE:** _I wrote dlcounter but lost control of the phil-ide account where the original repository was stored, so I've cloned it here. This is now the official repo for dlcounter and all future updates (if any) will be found here_.
 
 If you've ever wanted a download counter for DokuWiki to count how many zip, tar, gzip or other downloadable content has been fetched from your media library, this is probably what you want.
 
