@@ -6,4 +6,3 @@
  */
 
 $conf['extensions']    = 'zip, gzip, tar';
-
